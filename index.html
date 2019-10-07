@@ -224,6 +224,7 @@
       width: 100%;
       text-align: center;
       margin: 0 auto;
+      margin-bottom: 80px;
       background-color: #FFFFFF;
     }
 
@@ -329,6 +330,10 @@
         padding-left: 26px;
         padding-right: 26px;
       }
+
+      .mktoForm .mktoOffset {
+        width: 0px !important;
+      }
     }
 
     @media (max-width: 1199.98px) {
@@ -339,7 +344,7 @@
       }
 
       .head-wrap {
-        margin-top: 95px;
+        margin-top: 30px;
       }
     }
 
@@ -348,10 +353,15 @@
     }
 
     @media (max-width: 430px) {
-      .card {
-        padding-left: 19px;
-        padding-right: 19px;
+      .card, .navbar .container {
+        padding-left: 20px;
+        padding-right: 20px;
       } 
+
+      .header-text {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
       .mktoForm .mktoLabel {
           width: 288px !important;
@@ -393,6 +403,7 @@
         .navbar {
           width: 100%;
           background-color: #FAF8F6;
+          position: relative !important;
         }
 
         .navbar .container {
@@ -503,7 +514,6 @@
               height="34" alt="" class="gusto-logo mktoImg" mktoName="Gusto Logo" id="gustoLogo" /></a></div>
       </div>
     </div>
-    <div class="navbar-underside"></div>
   </div>
   <div class="wrap">
     <div class="header-text">
@@ -536,9 +546,9 @@
     </script>
     <script>
         //Add box shadow to nav on scroll. 
-        $(window).scroll(function () {
-          ($(window).scrollTop() >= 50) ? $('.navbar').addClass('on-scroll') : $('.navbar').removeClass('on-scroll')
-        });
+        // $(window).scroll(function () {
+        //   ($(window).scrollTop() >= 50) ? $('.navbar').addClass('on-scroll') : $('.navbar').removeClass('on-scroll')
+        // });
     </script>
 </body>
 </html>
