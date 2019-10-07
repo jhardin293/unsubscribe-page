@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html data-wf-page="5b71ed28923545752c99bdbf" data-wf-site="5b71ed28923545c70399bdbe">
+<head>
+  <!-- MARKETO VARIABLES -->
+  <!-- <meta class="mktoString" id="number" mktoname="Gusto Number" default="(888) 527-8170">
+  <meta class="mktoString" id="sign-in-link" mktoname="Sign In Link" default="https://app.gusto.com/login">
+  <meta class="mktoString" id="h1" mktoname="H1" default="Let's Keep In Touch">
+  <meta class="mktoString" id="h2" mktoname="H2" default="Help us improve your experience with Gusto through better communication. Please adjust your email preferences below, and we will refine our love letters to you accordingly.">
+  <meta class="mktoString" id="h3" mktoname="H3" default="This will adjust your promotional email preferences but if you're a Gusto customer, you'll still receive operational emails relating to your account and service."> -->
+  <!-- MARKETO VARIABLES END -->
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Styling -->
+
+  <title>${h1}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="https://go.gusto.com/rs/110-WOX-868/images/stylesheet.css">
+  <link rel="stylesheet" media="screen, print"
+      href="https://assets.gusto.com/assets/brand_refresh/gusto-92a14ec65703b1a54abfc0f89279b1f72dfbacdf29b433dfcee7087657e9b198.css"
+      as="style">
+
+  <style>
+
+    * {font-family: "proxima_novaregular", sans-serif;font-weight: 500;}
+    body {
+      margin: 0px;
+      background-color: #FAF8F6;
+    }
+    .header-text{
+      max-width: 600px;
+      text-align: center;
+      margin: auto;
+    }
+    .wrap {
+      max-width: 670px;
+      margin: 0 auto;
+    }
+    .topnav {
+      display: block;
+      height: 70px;
+      width: 100%;
+    }
+    .topnav-left a {float: left;}
+    .topnav-right {float: right;}
+    .button {
+      background-color: #F45D48; /* Guava */
+      border: none;
+      color: white;
+      padding: 8px 35px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 15px 2px;
+      cursor: pointer;
+    }
+
+    .logo {
+      margin-top: 15px;
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      max-width: 150px;
+    }
+    .number {
+      font-size: 15px;
+      text-decoration: none;
+      color: #323232;
+      margin-left: 10px;
+      margin-right: 50px;
+    }
+
+    .mktoForm {
+      width: 100% !important;
+    }
+
+
+
+    .mktoFieldDescriptor {
+      width: 100% !important;
+    }
+
+    .mktoCheckboxList {
+      float: right !important;
+    }
+
+    .mktoForm label{
+      font-family: "gcentra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px !important;
+      font-weight: 300;
+    }
+
+    .mktoForm br {
+      height: 0px !important;
+      content: "";
+      margin: 1px;
+      display: block;
+      font-size: 24%;
+    }
+
+    label[for="Email"] {
+      font-weight: 300 !important;
+      float: none !important;
+      width: 200px !important;
+      margin-left: -11px !important;
+      margin-bottom: 12px !important;
+      padding-top: 7px !important;
+    }
+
+    label[for="Email"] .mktoAsterix {
+      display: none !important;
+    }
+    
+    #Email {
+      float: none !important;
+      width: 84% !important;
+      margin-left: 7px !important;
+      font-size: 15px !important;
+      padding-top: 14px !important;
+      padding-bottom: 14px !important;
+      padding-left: 20px !important;
+      border-radius: 0px !important;
+      border: 1px solid #DCDCDC !important;
+      height: auto;
+      font-family: "gcentra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      box-shadow: none !important;
+      font-weight: 300 !important;
+    }
+
+    .mktoFieldWrap strong {
+      font-weight: 400;
+      font-size: 18px !important;
+      margin-bottom: 5px !important;
+      display: inline-block;
+    }
+
+    .mktoFieldWrap span {
+      font-weight: 300 !important;
+    }
+
+    .mktoFieldWrap {
+      margin-bottom: 20px !important;
+    }
+
+
+
+    .mktoForm input[type=checkbox] + label:before, .mktoForm input[type=radio] + label:before {
+      box-shadow: none !important;
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 2px;
+      border: 1px solid #DCDCDC !important;
+      font-size: 20px !important;
+      font-family: "gcentra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    }
+
+    .mktoForm .mktoLabel {
+      width: 470px !important;
+    }
+
+    .mktoForm .mktoButtonRow {
+      width: 100% !important;
+      text-align: center;
+    }
+
+    .mktoForm .mktoButtonRow .mktoButtonWrap  {
+      margin-left: 0px !important;
+    }
+
+    .mktoForm .mktoLogicalField {
+      width: 20px !important;
+    }
+
+    .btn-override {
+      font-family: "gcentra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      border-radius: 5px;
+      -webkit-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      background: -webkit-linear-gradient(right, #f45d48 50%, #ef523c 50%);
+      background: linear-gradient(to left, #f45d48 50%, #ef523c 50%);
+      background-position: right bottom;
+      background-size: 200% 100%;
+      border: none;
+      display: inline-block;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px 20px !important;
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+
+    .btn-override:hover {
+      background-position: left bottom;
+      text-decoration: none;
+    }
+
+
+
+
+
+
+    .bottom-mailbox {
+      position: fixed;
+      bottom: 0px;
+      right: 90px;
+    }
+    @media(max-width: 776px){
+      .number {margin-right: 10px;font-size: 14px;}
+      .logo {margin-left: 10px;max-width:120px;margin-top:20px;}
+    }
+
+    .card {
+      padding-top: 40px;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-bottom: 40px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+    }
+
+    .mktoForm .mktoFormRow:nth-child(n+9) {
+      display: none;
+    }
+
+
+    .illo {max-height: 130px;}
+
+    .head-wrap {
+      margin-top: 50px;
+    }
+
+    .head-wrap img {
+      display: none;
+    }
+
+    .headline {
+      color: #323232;
+      font-size: 42px;
+      padding: 0px 25px;
+      margin-bottom: 10px;
+    }
+
+
+    .mktoForm .btn-override {
+      margin-top: -8px;
+    }
+    .subheadline {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 34px;
+      margin-top: 0px;
+      padding: 0px 25px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 991.98px) {
+      .nav-container .container {
+        max-width: 670px;
+        padding-left: 0px;
+      }
+
+
+      .bottom-mailbox {
+        display: none;
+      }
+    }
+
+  
+
+    @media (max-width: 600px) {
+      .mktoForm .mktoLabel {
+        width: 350px !important;
+      }
+
+      .mktoFieldWrap strong {
+        margin-bottom: 0px !important;  
+      }
+
+      .mktoForm .mktoLabel {
+        line-height: 24px !important;
+      }
+
+
+    }
+
+    @media (max-width: 670px) {
+      .nav-container .container {
+        padding-left: 30px;
+      }
+
+      .head-wrap {
+        display: flex;
+        align-items: baseline;
+        align-items: center;
+      }
+
+      .head-wrap h1 {
+        max-width: 208px;
+        line-height: 116.6%;
+        padding-left: 0;
+      }
+
+      .header-text {
+        text-align: left;
+        max-width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+
+      }
+
+      .subheadline {
+        padding-left: 0px;
+      }
+
+      .head-wrap img {
+        display: block;
+      }
+      
+      .card {
+        padding-left: 26px;
+        padding-right: 26px;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      .bottom-mailbox {
+        width: 126.7px;
+        height: 151.9px;
+        right: 20px;
+      }
+
+      .head-wrap {
+        margin-top: 95px;
+      }
+    }
+
+    @media(max-width: 776px){
+      .subheadline{font-size: 16px;}
+    }
+
+    @media (max-width: 430px) {
+      .card {
+        padding-left: 19px;
+        padding-right: 19px;
+      } 
+
+      .mktoForm .mktoLabel {
+          width: 288px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mktoMobileShow .mktoForm, .mktoForm *, .mktoForm, .mktoForm * {
+        padding: 0px !important;
+      }
+      .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {
+        padding: 0.3em !important;
+      }
+
+      .mktoFieldWrap strong {
+        font-size: 16px !important;
+      }
+
+      .btn-override {
+        padding: 12px 20px !important;
+        width: 100% !important;
+      }
+
+      label[for="Email"],#Email {
+        margin-left: 0px !important;
+        width: 100% !important;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-container">
+    <div class="html-embed-12 w-embed">
+      <style>
+        /* Nav Bar */
+        .navbar {
+          width: 100%;
+          background-color: #FAF8F6;
+        }
+
+        .navbar .container {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+
+        .navbar .menu-bar {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+
+        .navbar .gusto-logo {
+          padding: 0px;
+        }
+
+        .navbar .contact-sign-in {
+          display: flex;
+          align-items: center;
+        }
+
+        .navbar .contact-sign-in p {
+          margin-bottom: 0px;
+        }
+
+        .navbar .contact-sign-in img {
+          margin-left: 18px;
+          margin-right: 50px;
+        }
+
+        .navbar a {
+          text-decoration: none;
+        }
+
+        .navbar .btn {
+          margin: 0px;
+          background: white;
+          color: #525257 !important;
+          border: 1px solid #8AD8D8;
+        }
+
+        .navbar .btn:hover {
+          border: 1px solid #0A8080;
+          color: #0A8080 !important;
+        }
+
+        .navbar .burger-wrapper .burger,
+        .navbar .burger-wrapper .burger:after,
+        .navbar .burger-wrapper .burger:before {
+          height: 1.5px;
+          border-radius: 20px;
+          background-color: #0A8080;
+        }
+
+        .navbar .burger-wrapper.x .burger:after,
+        .navbar .burger-wrapper.x .burger:before {
+          border-radius: 0px;
+          background-color: #2f3535;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+          background-color: #ffffff;
+          height: 192px;
+          box-shadow: 0 12px 8px -8px rgba(0, 0, 0, 0.1);
+          margin-top: 8px;
+        }
+
+        .mobile-menu .container {
+          padding-top: 0px
+        }
+
+        .mobile-menu a {
+          display: block;
+          color: #0B9DAA;
+          border-top: 1px solid #EAEAEA;
+          height: 61px;
+          padding-top: 19px;
+          font-weight: 400;
+          text-decoration: none;
+        }
+
+        .mobile-menu a div {
+          display: inline-block;
+        }
+
+        .mobile-menu a div:not(:first-child) {
+          margin-left: 5px;
+          color: #222525;
+        }
+
+        @media (max-width: 767.98px) {
+
+          /*Menu bar */
+          .menu-bar .contact-sign-in {
+            display: none;
+          }
+        }
+      </style>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <div class="container">
+        <div class="menu-bar"><a href="#" class="w-nav-brand"><img
+              src="https://uploads-ssl.webflow.com/5bf2e1771faec74823076567/5d2eccfed929d6acb049f0ff_Gusto%20logo_f45d48.svg"
+              height="34" alt="" class="gusto-logo mktoImg" mktoName="Gusto Logo" id="gustoLogo" /></a></div>
+      </div>
+    </div>
+    <div class="navbar-underside"></div>
+  </div>
+  <div class="wrap">
+    <div class="header-text">
+      <div class="head-wrap">
+        <h1 class="headline">Let’s keep in touch.</h1>
+        <img src="https://uploads-ssl.webflow.com/5bf2e1771faec74823076567/5d97a9e16a6b1ff6da630dfb_mailbox.png" alt="" width="74px" height="90px">
+      </div>
+      <p class="subheadline">Gusto cares about giving you the information you want. Select which communications you wish to receive so we can better serve you.</p>
+    </div>
+    <div class="card">
+      <!-- CONTENT -->
+        <!-- MARKETO FORM START -->
+          <!-- <div class="mktoForm" id="formHero" mktoName="Hero Form"></div>
+          <script src="//app-ab13.marketo.com/js/forms2/js/forms2.min.js"></script> -->
+          <script src="//app-ab13.marketo.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_2552"></form>
+          <script>MktoForms2.loadForm("//app-ab13.marketo.com", "110-WOX-868", 2552);</script>
+          
+        <!-- MARKETO FORM STOP -->
+    </div>
+  </div>
+  <img class="bottom-mailbox" src="https://uploads-ssl.webflow.com/5bf2e1771faec74823076567/5d97a9e16a6b1ff6da630dfb_mailbox.png" width="181px" height="217px" alt="">
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      MktoForms2.whenReady(function (form) {
+        $('.mktoForm .mktoButton').removeClass("mktoButton").addClass("margin-bottom-none btn-override");
+        $('#Email').attr('placeholder', 'Email address');
+      });
+    </script>
+    <script>
+        //Add box shadow to nav on scroll. 
+        $(window).scroll(function () {
+          ($(window).scrollTop() >= 50) ? $('.navbar').addClass('on-scroll') : $('.navbar').removeClass('on-scroll')
+        });
+    </script>
+</body>
+</html>
